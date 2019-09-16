@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -13,15 +14,21 @@
 
 <footer id="colophon" class="site-footer">
 	<div class="site-info">
-		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'rmdr_wp_theme' ) ); ?>"><?php
-			/* translators: %s: CMS name, i.e. WordPress. */
-			printf( esc_html__( 'Proudly powered by %s', 'rmdr_wp_theme' ), 'WordPress' );
-		?></a>
-		<span class="sep"> | </span>
-		<?php
-			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Theme: %s', 'rmdr_wp_theme' ), '<a href="https://github.com/WordPress/rmdr_wp_theme/">Gutenberg</a>' );
-		?>
+		<span class="copyright">&copy; 2019
+			<script>
+				new Date().getFullYear() > 2019 &&
+					document.write("-" + new Date().getFullYear());
+			</script>
+			, RMD Research</span>
+		<nav id="footer-navigation" class="navigation navigation--footer">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'rmdr_wp_theme'); ?></button>
+			<?php
+			wp_nav_menu(array(
+				'theme_location' => 'menu-2',
+				'menu_id'        => 'footer-menu',
+			));
+			?>
+		</nav>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
@@ -29,4 +36,5 @@
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

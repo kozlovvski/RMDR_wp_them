@@ -27,7 +27,7 @@
 		<header id="masthead" class="site-header">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php the_custom_logo(); ?></a>
 
-			<nav id="site-navigation" class="main-navigation">
+			<nav id="site-navigation" class="navigation navigation--header">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'rmdr_wp_theme'); ?></button>
 				<?php
 				wp_nav_menu(array(

@@ -647,7 +647,7 @@ a:hover, a:active {
 .site-main .post-navigation {
   border-bottom: 1px solid #e2e4e7;
 	margin: 0 auto 60px;
-  max-width: 580px;
+  max-width: 960px;
 	overflow: hidden;
   padding-bottom: 60px;
 }
@@ -716,7 +716,7 @@ a:hover, a:active {
 
 .alignleft,
 .alignright {
-	max-width: 580px !important;	/* Let's work to make this !important unnecessary */
+	max-width: 960px !important;	/* Let's work to make this !important unnecessary */
 }
 
 .alignleft img,
