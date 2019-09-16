@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package gutenberg-starter-theme
+ * @package rmdr_wp_theme
  */
 
 /**

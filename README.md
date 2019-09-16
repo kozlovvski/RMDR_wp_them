@@ -16,4 +16,4 @@ There are a few optional settings available in the `Appearance > Theme Options` 
 
 ## Contributing
 
-Fixes and enhancements for the theme are welcome and encouraged! For more information about contributing, please visit [CONTRIBUTING.md](https://github.com/WordPress/gutenberg-starter-theme/blob/master/CONTRIBUTING.md).
+Fixes and enhancements for the theme are welcome and encouraged! For more information about contributing, please visit [CONTRIBUTING.md](https://github.com/WordPress/rmdr_wp_theme/blob/master/CONTRIBUTING.md).

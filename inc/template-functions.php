@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package gutenberg-starter-theme
+ * @package rmdr_wp_theme
  */
 
 /**

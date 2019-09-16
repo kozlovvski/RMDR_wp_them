@@ -1,10 +1,10 @@
 <?php
 /**
- * rmdr functions and definitions
+ * rmdr_wp_theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package rmdr
+ * @package rmdr_wp_theme
  */
 
 if ( ! function_exists( 'gutenberg_starter_theme_setup' ) ) :
@@ -19,10 +19,10 @@ if ( ! function_exists( 'gutenberg_starter_theme_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on rmdr, use a find and replace
-		 * to change 'rmdr' to the name of your theme in all the template files.
+		 * If you're building a theme based on rmdr_wp_theme, use a find and replace
+		 * to change 'rmdr_wp_theme' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'rmdr', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'rmdr_wp_theme', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'gutenberg_starter_theme_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Header', 'rmdr' ),
+			'menu-1' => esc_html__( 'Header', 'rmdr_wp_theme' ),
 			'menu-2' => esc_html__( 'Footer', )
 		) );
 
@@ -107,7 +107,7 @@ add_action( 'after_setup_theme', 'gutenberg_starter_theme_content_width', 0 );
 // 	 * supported by Noto Serif, translate this to 'off'. Do not translate
 // 	 * into your own language.
 // 	 */
-// 	$notoserif = esc_html_x( 'on', 'Noto Serif font: on or off', 'rmdr' );
+// 	$notoserif = esc_html_x( 'on', 'Noto Serif font: on or off', 'rmdr_wp_theme' );
 
 // 	if ( 'off' !== $notoserif ) {
 // 		$font_families = array();
@@ -131,13 +131,13 @@ add_action( 'after_setup_theme', 'gutenberg_starter_theme_content_width', 0 );
 function gutenberg_starter_theme_scripts() {
 	wp_enqueue_style( 'gutenbergbase-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'rmdrblocks-style', get_template_directory_uri() . '/css/blocks.css' );
+	wp_enqueue_style( 'rmdr_wp_themeblocks-style', get_template_directory_uri() . '/css/blocks.css' );
 
-	// wp_enqueue_style( 'rmdr-fonts', gutenberg_starter_theme_fonts_url() );
+	// wp_enqueue_style( 'rmdr_wp_theme-fonts', gutenberg_starter_theme_fonts_url() );
 
-	wp_enqueue_script( 'rmdr-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'rmdr_wp_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'rmdr-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'rmdr_wp_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

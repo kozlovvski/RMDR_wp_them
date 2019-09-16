@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package gutenberg-starter-theme
+ * @package rmdr_wp_theme
  */
 
 /**
@@ -28,7 +28,7 @@ function gutenberg_starter_theme_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details' => array(
-			'stylesheet' => 'gutenberg-starter-theme-style',
+			'stylesheet' => 'rmdr_wp_theme-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
