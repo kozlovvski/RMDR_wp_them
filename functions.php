@@ -76,7 +76,7 @@ if ( ! function_exists( 'gutenberg_starter_theme_setup' ) ) :
 		 */
 		add_theme_support( 'custom-logo', array(
 			'height'      => 250,
-			'width'       => 250,
+			'width'       => 500,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );

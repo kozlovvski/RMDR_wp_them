@@ -69,7 +69,8 @@
   min-height: unset;
   max-width: 960px;
   width: 100%;
-  padding: 6vw 20px;
+  padding: calc(3rem + 3vw) 20px;
+  font-size: 1.2rem;
 }
 
 .wp-block-cover__inner-container {
@@ -84,18 +85,16 @@
 }
 
 .wp-block-cover__inner-container h2 {
+  max-width: unset;
+  padding: 0;
+  margin: 0;
+
   font-size: 2.44em;
-  font-weight: 400;
+  font-weight: 300;
 }
 
-.wp-block-cover-text p {
-  padding: 1.5em 14px;
-}
-
-@media screen and (min-width: 608px) {
-  .wp-block-cover-text p {
-    padding: 1.5em 0;
-  }
+.wp-block-cover__inner-container p {
+  line-height: 1.4 !important;
 }
 
 /*--------------------------------------------------------------
