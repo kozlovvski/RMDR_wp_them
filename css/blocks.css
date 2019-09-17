@@ -40,7 +40,7 @@
 }
 
 .entry-content > .alignfull {
-  margin: 1.5em 0;
+  margin: 0 auto;
   max-width: 100%;
 }
 
@@ -68,7 +68,24 @@
 .wp-block-cover {
   min-height: unset;
   max-width: 960px;
-  padding: 50px 20px;
+  width: 100%;
+  padding: 6vw 20px;
+}
+
+.wp-block-cover__inner-container {
+  max-width: 760px;
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+.wp-block-cover__inner-container > * {
+  word-break: break-word;
+  margin: auto
+}
+
+.wp-block-cover__inner-container h2 {
+  font-size: 2.44em;
+  font-weight: 400;
 }
 
 .wp-block-cover-text p {
@@ -307,34 +324,34 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 ## Color Palette
 --------------------------------------------------------------*/
 
-.has-strong-blue-color {
-  color: #0073aa;
+.has-rmdr-blue-color {
+  color: #00007f;
 }
 
-.has-strong-blue-background-color {
-  background-color: #0073aa;
+.has-rmdr-blue-background-color {
+  background-color: #00007f;
 }
 
-.has-lighter-blue-color {
-  color: #229fd8;
+.has-rmdr-green-color {
+  color: #008001;
 }
 
-.has-lighter-blue-background-color {
-  background-color: #229fd8;
+.has-rmdr-green-background-color {
+  background-color: #008001;
 }
 
-.has-very-light-gray-color {
-  color: #eee;
+.has-rmdr-light-gray-color {
+  color: #f2f2f2;
 }
 
-.has-very-light-gray-background-color {
-  background-color: #eee;
+.has-rmdr-light-gray-background-color {
+  background-color: #f2f2f2;
 }
 
-.has-very-dark-gray-color {
-  color: #444;
+.has-rmdr-dark-gray-color {
+  color: #3f3f3f;
 }
 
-.has-very-dark-gray-background-color {
-  background-color: #444;
+.has-rmdr-dark-gray-background-color {
+  background-color: #3f3f3f;
 }
